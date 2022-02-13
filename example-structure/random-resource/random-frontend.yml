@@ -1,0 +1,13 @@
+---
+primary_random_frontend_name: "random-frontend"
+server:
+  subscription_id: "${{subscription_id}}"
+  resource_name: "${{virtual_machines.name}}-rg"
+  allowed_ports:
+    ${{virtual_machines.frontend.port}}
+
+  server_name: "${{{primary_random_frontend_name}}}-vm"
+  monitor_name: "${{{primary_random_frontend_name}}}-mon"
+
+  local_and_external_example: "${{{server.subscription_id}}}-good-eh!"
+...

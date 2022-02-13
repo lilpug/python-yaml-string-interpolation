@@ -1,0 +1,14 @@
+---
+primary_random_database_name: "random-database"
+server:
+  subscription_id: "${{subscription_id}}"
+  resource_name: "${{virtual_machines.name}}-rg"
+  allowed_ports:
+    - ${{virtual_machines.backend.port}}
+    - ${{virtual_machines.frontend.port}}
+
+  server_name: "${{{primary_random_database_name}}}-vm"
+  monitor_name: "${{{primary_random_database_name}}}-mon"
+
+  local_and_external_example: "${{{server.subscription_id}}}-good-eh!"
+...
