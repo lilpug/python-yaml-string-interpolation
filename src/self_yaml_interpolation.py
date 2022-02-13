@@ -1,4 +1,4 @@
-from lib.yaml_utilities import *
+from yaml_utilities import *
 import argparse
 
 

@@ -2,6 +2,13 @@
 
 This library allows you to compile yaml files so string interpolation can be done.
 
+## Requirements
+
+This library requires the pyyaml package, you can install it like so.
+
+```
+pip install pyyaml
+```
 
 ## Library Commands
 
